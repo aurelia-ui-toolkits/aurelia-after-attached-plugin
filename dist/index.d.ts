@@ -1,0 +1,1 @@
+export * from 'aurelia-after-attached-plugin/aurelia-after-attached-plugin';
