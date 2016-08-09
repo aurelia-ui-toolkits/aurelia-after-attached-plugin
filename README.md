@@ -10,6 +10,9 @@ This plugin adds an "afterAttached" lifecycle callback to the View. The afterAtt
 - detached()
 - unbind()
 
+Install (JSPM):
+`jspm install aurelia-after-attached-plugin=github:aurelia-ui-toolkits/aurelia-after-attached-plugin`
+
 Usage:
 
 ```diff
