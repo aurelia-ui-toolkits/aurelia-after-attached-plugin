@@ -13,9 +13,9 @@ export function configure(aurelia) {
 
     // call afterAttached() only if the View has not been attached before
     if (!isAttached) {
-      if (this.controller !== null && this.controller.viewModel.afterAttached) {
+      if (this.bindingContext && this.bindingContext.afterAttached) {
         // call afterAttached() via the taskqueue, so any two-way bindings have been completed
-        taskQueue.queueTask(() => this.controller.viewModel.afterAttached());
+        taskQueue.queueTask(() => this.bindingContext.afterAttached());
       }
     }
   }

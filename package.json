@@ -1,6 +1,6 @@
 {
   "name": "aurelia-after-attached-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "registry": "github",
   "description": "Adds the afterAttached lifecycle callback",
   "keywords": [
@@ -55,6 +55,7 @@
     "babel-preset-es2015-loose": "^7.0.0",
     "babel-preset-es2015-loose-native-modules": "^1.0.0",
     "babel-preset-stage-1": "^6.5.0",
+    "browser-sync": "^2.14.0",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",

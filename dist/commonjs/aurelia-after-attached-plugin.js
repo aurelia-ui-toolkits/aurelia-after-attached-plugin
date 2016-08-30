@@ -20,9 +20,9 @@ function configure(aurelia) {
     attached.call(this);
 
     if (!isAttached) {
-      if (this.controller !== null && this.controller.viewModel.afterAttached) {
+      if (this.bindingContext && this.bindingContext.afterAttached) {
         taskQueue.queueTask(function () {
-          return _this.controller.viewModel.afterAttached();
+          return _this.bindingContext.afterAttached();
         });
       }
     }

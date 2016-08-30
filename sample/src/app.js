@@ -1,5 +1,7 @@
 export class App {
+  objs = [{},{},{}];
+  
   afterAttached() {
-    alert('afterAttached was called');
+      this.message ='app.js afterattached';
   }
 }

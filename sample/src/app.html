@@ -1,3 +1,13 @@
 <template>
-  <click-counter></click-counter> 
+  ${message}
+  
+  <br><br>
+
+  <require from="./my-element"></require>
+  <my-element></my-element>
+
+  <br><br>
+  <div repeat.for="obj of objs">
+    <my-element></my-element>
+  </div>
 </template>
