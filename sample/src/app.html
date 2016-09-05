@@ -1,13 +1,24 @@
 <template>
+  <h3>Page</h3>
   ${message}
+
+  <hr>
   
   <br><br>
-
+  <h3>custom element</h3>
   <require from="./my-element"></require>
   <my-element></my-element>
 
+  <hr>
+
   <br><br>
+  <h3>repeat.for</h3>
   <div repeat.for="obj of objs">
     <my-element></my-element>
   </div>
+  <hr>
+
+  <h3>@noView</h3>
+  <require from="./my-element-with-no-view"></require>
+  <my-element-with-no-view></my-element-with-no-view>
 </template>

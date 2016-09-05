@@ -1,7 +1,11 @@
 export class App {
   objs = [{},{},{}];
   
+  attached() {
+    this.message = 'attached';
+  }
+  
   afterAttached() {
-      this.message ='app.js afterattached';
+      this.message += ', afterattached';
   }
 }

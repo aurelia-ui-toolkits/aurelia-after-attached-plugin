@@ -1,5 +1,9 @@
 export class MyElement {
-    afterAttached() {
-        this.message ='my-element.js afterattached';
-    }
+  attached() {
+    this.message = 'attached';
+  }
+  
+  afterAttached() {
+      this.message += ', afterattached';
+  }
 }

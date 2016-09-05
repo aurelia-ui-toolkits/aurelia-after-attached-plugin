@@ -8,17 +8,17 @@ define(['exports', 'aurelia-templating', 'aurelia-task-queue'], function (export
   function configure(aurelia) {
     var taskQueue = aurelia.container.get(_aureliaTaskQueue.TaskQueue);
 
-    var attached = _aureliaTemplating.View.prototype.attached;
-    _aureliaTemplating.View.prototype.attached = function () {
+    var attached = _aureliaTemplating.Controller.prototype.attached;
+    _aureliaTemplating.Controller.prototype.attached = function () {
       var _this = this;
 
       var isAttached = this.isAttached;
       attached.call(this);
 
       if (!isAttached) {
-        if (this.bindingContext && this.bindingContext.afterAttached) {
+        if (this.viewModel && this.viewModel.afterAttached) {
           taskQueue.queueTask(function () {
-            return _this.bindingContext.afterAttached();
+            return _this.viewModel.afterAttached();
           });
         }
       }
