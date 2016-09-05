@@ -1,4 +1,4 @@
-import { View, Controller } from 'aurelia-templating';
+import { Controller } from 'aurelia-templating';
 import { TaskQueue } from 'aurelia-task-queue';
 
 export function configure(aurelia) {

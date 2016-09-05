@@ -3,7 +3,7 @@
 System.register(['aurelia-templating', 'aurelia-task-queue'], function (_export, _context) {
   "use strict";
 
-  var View, Controller, TaskQueue;
+  var Controller, TaskQueue;
   function configure(aurelia) {
     var taskQueue = aurelia.container.get(TaskQueue);
 
@@ -28,7 +28,6 @@ System.register(['aurelia-templating', 'aurelia-task-queue'], function (_export,
 
   return {
     setters: [function (_aureliaTemplating) {
-      View = _aureliaTemplating.View;
       Controller = _aureliaTemplating.Controller;
     }, function (_aureliaTaskQueue) {
       TaskQueue = _aureliaTaskQueue.TaskQueue;
